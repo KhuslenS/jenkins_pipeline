@@ -1,7 +1,9 @@
 node {
     stage("Say Hello"){
-      properties([parameters([text(defaultValue: '34.216.166.165', description: '''Dev : 34.216.166.165 Qa : 18.236.251.153 Prod : 52.38.233.129''', name: 'Remote_Instance')])])
-    git 'https://github.com/Khuslentuguldur/jenkins_august.git'
+      properties([parameters([text(defaultValue: '18.236.109.44', description: '''Dev : 18.236.109.44
+Qa : 34.220.189.34
+Prod : 34.208.130.2''', name: 'Remote_Instance')])])
+      git 'https://github.com/Khuslentuguldur/jenkins_august.git'
 
 
     }
