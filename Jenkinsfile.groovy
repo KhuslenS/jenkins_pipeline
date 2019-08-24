@@ -5,4 +5,7 @@ node {
 
 
     }
+    stage("Install Apache"){
+      ssh "ssh ec2-user@${Remote_Instance} sudo yum install httpd y"
+    }
 }
